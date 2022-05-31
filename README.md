@@ -1,9 +1,7 @@
+# libsmalloc
+A malloc implementation in Rust, suitable for rust and replace libc malloc.
 
 ```
-cargo build
-LD_PRELOAD=$(readlink -f target/debug/liblibsmalloc.so) ls
-$ gcc -Wall -g -O0 main.c -I. -Ltarget/debug/ -lsomelibname
-
-## One command:
+# Test it as:
 cargo build && LD_PRELOAD=$(readlink -f target/debug/libsmalloc.so) ls
 ```
