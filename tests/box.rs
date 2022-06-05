@@ -1,8 +1,5 @@
 extern crate smalloc;
 
-#[global_allocator]
-static ALLOCATOR: smalloc::SmallocAllocator = smalloc::SmallocAllocator {};
-
 #[test]
 fn test_boxing() {
     let a = Box::new(1);
