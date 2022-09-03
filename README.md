@@ -1,5 +1,5 @@
 # libsmalloc
-A malloc implementation in Rust, suitable for rust and replace libc malloc.
+A simple malloc (free, realloc, calloc) implementation in Rust.
 
 ```
 # Test it as:
